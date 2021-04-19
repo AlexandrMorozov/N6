@@ -4,7 +4,7 @@ stompClient.connect({}, function (frame) {
 
     var url = stompClient.ws._transport.url;
     console.log(stompClient.ws._transport.url);
-    url = url.replace("ws://task6-deploy.herokuapp.com/secured/game/",  "");
+    url = url.replace("wss://task6-deploy.herokuapp.com/secured/game/",  "");
     url = url.replace("/websocket", "");
     url = url.replace(/^[0-9]+\//, "");
     console.log("Your current session is: " + url);
